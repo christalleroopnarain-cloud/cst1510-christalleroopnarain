@@ -12,18 +12,18 @@ Work through the numbered sections in order. Each one tells you what it must do.
 Delete these instructions as you replace them with your code.
 """
 
-# ==================================================================== INPUT
-hostname = input("Enter a hostname: ")
-used_gb = float(input("Enter the amount of GB used: "))
-total_gb = float(input("Enter the total amount of GB: "))
 
-# ================================================================== PROCESS
-free_gb = total_gb - used_gb
-percent_used_gb = (used_gb / total_gb) * 100
+hostname = input("Enter a hostname: ") # label == hostname
+used_gb = float(input("Enter the amount of GB used: "))  #value == used_gb
+total_gb = float(input("Enter the total amount of GB: ")) #limit == total_gb
+
+
+free_gb = total_gb - used_gb  #difference == free_gb
+percent_used_gb = (used_gb / total_gb) * 100  #percent == percent_used_gb
 
 percent_free_gb = (free_gb / total_gb) * 100 #calculates percentage of free GB available out of total GB 
 
-# =================================================================== OUTPUT
+
 print()
 print("=" * 34)
 print(f"  RECORD CHECK  -  {hostname}")
